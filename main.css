@@ -1,7 +1,7 @@
 .img-container
 {
     width:200px;
-    padding:25px;
+    padding:15px;
     text-align: center;
 }
 .skillname
@@ -25,7 +25,7 @@ h1{
     margin:50px;
 }
 .grid-item {
-        height:45vh;
+        height:250px;
         width:250px;
         border:1px ;
         background-color:white;
@@ -36,3 +36,18 @@ h1{
         flex-direction: column;
         justify-content: space-between;
 }
+@media screen and (min-width: 576px) {
+    .container{
+       grid-template-columns: auto auto ;
+    }
+}
+
+@media  screen and (min-width: 768px) {
+    .container{
+       grid-template-columns: auto auto auto;
+    }
+}   
+@media  screen and (min-width: 1200px) {
+    .container{
+       grid-template-columns: auto auto auto auto;
+    }
